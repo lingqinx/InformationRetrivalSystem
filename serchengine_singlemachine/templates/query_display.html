@@ -1,0 +1,12 @@
+{% extends "index.html" %}
+{% block body %}
+     {% for entry in contents %}
+        <div class="content-grid-info">
+		    <div class="post-info">
+		        <h4><a href="single.html">{{ entry.title }}</a></h4>
+		        <p>{{ entry.text|safe }}</p>
+		        <a href="single.html"><span></span>READ MORE</a>
+		    </div>
+		</div>
+     {% endfor %}
+{% endblock %}
